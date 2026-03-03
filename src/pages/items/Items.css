@@ -216,7 +216,16 @@
 }
 
 @media (max-width: 560px) {
-    .basket__brand { font-size: 22px; }
-    .basket__name  { font-size: 18px; }
-    .basket__photo img { width: 120px; height: 110px; }
+    .basket__brand {
+        font-size: 22px;
+    }
+
+    .basket__name {
+        font-size: 18px;
+    }
+
+    .basket__photo img {
+        width: 120px;
+        height: 110px;
+    }
 }

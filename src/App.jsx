@@ -15,7 +15,7 @@ function App() {
 
   // console.log(data);
 
-  const phoneNumber = localStorage.getItem("pv_phone" || null) 
+  const phoneNumber = localStorage.getItem("pv_phone" || null)
 
   // console.log(phoneNumbers);
 
@@ -26,22 +26,24 @@ function App() {
           <Route path='/' element={
             // <PrivateRoute phone={phoneNumber}>
 
-              <Home />
+            <Home />
             // </PrivateRoute>
 
           } />
 
 
           <Route path='/adm' element={
-           <PrivateRoute phone={phoneNumber}>
-             <Admin />
-           </PrivateRoute>
+            <PrivateRoute phone={phoneNumber}>
+              <Admin />
+            </PrivateRoute>
           } />
           <Route path='/details/:id' element={
             <ProductDetail />
           } />
           <Route path='/basket' element={
-            <Basket />
+            <PrivateRoute phone={phoneNumber}>
+              <Basket />
+            </PrivateRoute>
           } />
           <Route path='/products' element={
             <Products />

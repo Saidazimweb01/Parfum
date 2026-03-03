@@ -5,6 +5,39 @@
         "brands": "Kontaktlar",
         "sale": "Aksiyalar"
     },
+    "footer": {
+        "brand_desc": "Yuqori parfyumeriya olamidagi yo'lboshchingiz. Biz ishonamizki, atir shunchaki hid emas, balki sizning ko'rinmas tashrif qog'ozingizdir.",
+        "col_perfume": "Parfyum haqida",
+        "col_help": "Yordam",
+        "col_contacts": "Kontaktlar",
+        "menu": {
+            "niche": "Nisheva seleksiya",
+            "vintage": "Vintaj nashrlar",
+            "etiquette": "Parfyumeriya etiketi",
+            "how_to_choose": "Atirni qanday tanlash kerak?",
+            "delivery": "Yetkazib berish va to'lov",
+            "auth": "Asllikni tekshirish",
+            "faq": "FAQ — Ko'p beriladigan savollar",
+            "account": "Shaxsiy kabinet"
+        },
+        "trust": {
+            "delivery_t": "Ekspress yetkazib berish",
+            "delivery_s": "Butun mamlakat bo'ylab ehtiyotkorona tashish",
+            "quality_t": "Sifat kafolati",
+            "quality_s": "Har bir flakon uchun sertifikatlar",
+            "gift_t": "Sovg'a sifatida namunalar",
+            "gift_s": "Har bir buyurtmaga testerlar sovg'a qilamiz",
+            "safe_t": "Xavfsizlik",
+            "safe_s": "SSL to'lov ma'lumotlarini shifrlash"
+        },
+        "bottom": {
+            "rights": "Barcha huquqlar himoyalangan",
+            "privacy": "Maxfiylik siyosati",
+            "offer": "Ommaviy oferta"
+        },
+        "address": "Moskva, Tverskaya ko'chasi, 12",
+        "work_hours": "Har kuni: 10:00 – 22:00"
+    },
     "auth": {
         "title_login": "Shaxsiy kabinet",
         "title_verify": "Tasdiqlash",

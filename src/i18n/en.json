@@ -5,6 +5,39 @@
         "brands": "Contacts",
         "sale": "Sales"
     },
+    "footer": {
+        "brand_desc": "Your guide to the world of high perfumery. We believe that fragrance is not just a scent, but your invisible business card and a way of self-expression.",
+        "col_perfume": "About Perfume",
+        "col_help": "Support",
+        "col_contacts": "Contacts",
+        "menu": {
+            "niche": "Niche Selection",
+            "vintage": "Vintage Editions",
+            "etiquette": "Perfume Etiquette",
+            "how_to_choose": "How to choose your scent?",
+            "delivery": "Shipping & Payment",
+            "auth": "Authenticity Check",
+            "faq": "FAQ — Common Questions",
+            "account": "Personal Account"
+        },
+        "trust": {
+            "delivery_t": "Express Delivery",
+            "delivery_s": "Careful worldwide shipping services",
+            "quality_t": "Quality Guarantee",
+            "quality_s": "Authenticity certificates for every bottle",
+            "gift_t": "Free Samples",
+            "gift_s": "Complimentary testers with every order",
+            "safe_t": "Secure Payment",
+            "safe_s": "SSL encrypted payment processing"
+        },
+        "bottom": {
+            "rights": "All rights reserved",
+            "privacy": "Privacy Policy",
+            "offer": "Public Offer"
+        },
+        "address": "12 Tverskaya St, Moscow",
+        "work_hours": "Daily: 10:00 AM – 10:00 PM"
+    },
     "auth": {
         "title_login": "Account",
         "title_verify": "Verification",

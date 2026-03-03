@@ -17,7 +17,7 @@ function Home() {
                 <Brands />
                 <NewArrivals />
             </main>
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }
