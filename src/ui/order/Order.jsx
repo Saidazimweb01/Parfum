@@ -1,7 +1,7 @@
 import { useOrderProductsMutation } from "../../app/services/authApi";
 import { getCart } from "../../utils/cart";
 import { useMemo, useState, useEffect } from "react";
-import styles from "./OrderButton.module.css";
+import styles from "./Orderbutton.module.css";
 
 function money(n, c = "USD") {
     const num = Number(n || 0);
