@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import logo from "../../images/logo2.png"
 import { Instagram, Send, Youtube, MessageCircle } from 'lucide-react';
 import "./Footer.css";
 
@@ -13,9 +14,9 @@ export default function Footer() {
 
           {/* Brand Section */}
           <div className="brand-col">
+             {/* <img width={170} src={logo} alt="" /> */}
             <div className="logo-area">
-              <span className="logo-main">YOU</span>
-              <span className="logo-tag">Perfumery · Community</span>
+              {/* <span className="logo-tag">Perfumery · Community</span> */}
             </div>
             <p className="brand-text">{t('footer.brand_desc')}</p>
             <div className="social-links">

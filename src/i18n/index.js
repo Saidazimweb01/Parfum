@@ -4,7 +4,7 @@ import en from "./en.json";
 import uz from "./uz.json";
 import ru from "./ru.json";
 
-let setLang = localStorage.getItem("lang") || "en";
+let setLang = localStorage.getItem("lang") || "uz";
 
 i18n.use(initReactI18next).init({
     resources: {

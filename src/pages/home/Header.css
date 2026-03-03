@@ -168,3 +168,12 @@
 .head__drawer-close:hover {
     opacity: 0.5;
 }
+
+
+
+@media(max-width:450px){
+    .head__logo img{
+        width: 20%;
+        height: 20%;
+    }
+}

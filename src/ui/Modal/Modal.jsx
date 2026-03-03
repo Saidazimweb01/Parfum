@@ -186,6 +186,8 @@ function StepWait({ sessionId, secretCode, tgLink, phone, onVerified, onBack }) 
   );
 }
 
+
+
 // ── Шаг 3: успех ─────────────────────────────────────────────────────────────
 function StepSuccess({ phone, isAdmin, onClose, onAdminClick }) {
   const { t } = useTranslation();

@@ -1,6 +1,7 @@
-import { Navigate, useLocation } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import { usePhoneNumberQuery } from "./app/services/authApi"
 
+// PrivateRoute.jsx
 export default function PrivateRoute({ children }) {
     const { data: phoneNumbers, isLoading } = usePhoneNumberQuery()
     const location = useLocation()
@@ -9,25 +10,24 @@ export default function PrivateRoute({ children }) {
     const verified = localStorage.getItem("pv_verified")
     const userPhone = localStorage.getItem("pv_phone")
 
-    // Ma'lumotlar yuklanayotgan bo'lsa, kutib turamiz (bo'lmasa darrov redirect qilib yuboradi)
-    // if (isLoading) return <div>Loading...</div>
-
-    // 1. Avtorizatsiyadan o'tmagan bo'lsa - login/home ga
+    // 1. Avtorizatsiyadan o'tmagan bo'lsa - srazu login/home ga
     if (!token || !verified) {
         return <Navigate to="/" replace />
     }
+
+    // 2. MUHIM: Ma'lumotlar yuklanayotgan bo'lsa, hech narsa qilmay turamiz
+    // Bu yerda Loading... o'rniga null yoki Spinner qaytarish mumkin
+    if (isLoading) return null 
 
     const isAdmin = phoneNumbers?.some(
         item => item.phone === userPhone
     )
 
-    // 2. MUHIM: Faqat admin sahifasiga kirmoqchi bo'lgandagina adminlikni tekshiramiz
+    // 3. Faqat admin sahifasiga kirmoqchi bo'lgandagina adminlikni tekshiramiz
     if (location.pathname.startsWith("/adm") && !isAdmin) {
+        console.log("Admin emas, redirect bo'lyapti");
         return <Navigate to="/" replace />
     }
-
-    // 3. Admin bo'lsa boshqa sahifalarga (masalan savatchaga) kirishini taqiqlamaymiz!
-    // Bu yerdagi (isAdmin && !location.pathname.startsWith("/adm")) sharti o'chirildi.
 
     return children
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../../images/logo.svg";
+import logo from "../../images/logo4.png";
 import profile from "../../images/profile.svg";
 import shop from "../../images/shop.svg";
 import "./Header.css";
@@ -132,7 +132,7 @@ function Header() {
           <div className="head__main">
             <div className="head__top">
               <Link className="head__logo" to="/">
-                <img src={logo} alt="logo" />
+                <img width={70} src={logo} alt="logo"  />
               </Link>
 
               <ul className="head__list">
